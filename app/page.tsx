@@ -1,11 +1,11 @@
 import React from "react";
-import { Navbar } from "./components/navbar";
+import "./globals.css";
 
 export default function Home() {
   return (
-    <div>
-      <Navbar />
-      <div>Shaboom the future portfolio site!</div> 
-    </div>
+    <section className="home-section active">
+      <h1 className="hero-heading">hello, i am <br /> sam</h1>
+      <img src="img/home.png" className="home-img" alt="missing" />
+    </section>
   );
 }
