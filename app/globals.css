@@ -50,39 +50,41 @@ a.active {
   opacity: 1;
 }
 
-.home-section{
-    width: 100%;
-    height: 100vh;
-    padding: 0 150px;
-    display: flex;
-    align-items: center;
-    top: 0;
-    opacity: 0;
-    transition: 1s;
+.home-section {
+  width: 100%;
+  height: 90vh;
+  padding: 0 150px;
+  top: 0;
+  opacity: 0;
+  transition: 1s;
 }
 
-.hero-heading{
-    color: #fff;
-    font-size: 120px;
-    text-transform: capitalize;
-    font-weight: 300;
+.hero-heading {
+  color: #fff;
+  font-size: 150px;
+  text-transform: capitalize;
+  font-weight: 300;
+  position: absolute;
+  top: 22%;
+  left: 17%;
 }
 
-.home-img{
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100vh;
-    width: 50%;
-    object-fit: cover;
-    opacity: 0.2;
+.home-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 90vh;
+  width: 50%;
+  object-fit: cover;
+  opacity: 0.3;
+  border-radius: 4px;
 }
 
 .home-section.active,
 .project-section.active,
 .about-section.active,
-.contact-section.active{
-    position: relative;
-    opacity: 1;
-    z-index: 8;
+.contact-section.active {
+  position: relative;
+  opacity: 1;
+  z-index: 8;
 }
