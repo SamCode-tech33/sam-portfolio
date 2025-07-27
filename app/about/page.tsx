@@ -1,9 +1,22 @@
+"use client"
+
+import { useEffect } from "react";
+import { useAppContext } from "../context";
 import React from "react";
 import Skillcard from "../components/skillcards"
 
 const About = () => {
+    const { page, setPage } = useAppContext();
+
+    useEffect(() => {
+        setPage("about");
+        return () => {
+            setPage("default");
+        };
+    }, [setPage]);
+
     return (
-        <section className="about-section active">
+        <section className={page === "about" ? "about-section active" : "about-section"}>
             <div className="about">
                 <div className="about-img-container">
                     <button className="download-cv-btn">downlaod cv</button>

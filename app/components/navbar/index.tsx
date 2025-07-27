@@ -1,10 +1,10 @@
-"use client";
+"use client"
 
-import { useState } from "react";
+import { useAppContext } from "../../context";
 import Link from "next/link";
 
 const Navbar = () => {
-  const [activeLink, setActiveLink] = useState(0);
+  const { page } = useAppContext();
 
   const links = [
     { name: "home", href: "/" },
@@ -13,19 +13,14 @@ const Navbar = () => {
     { name: "contact", href: "/contact" },
   ];
 
-  const handleLinkClick = (index: number) => {
-    setActiveLink(index);
-  };
-
   return (
-    <div className="flex w-full h-16 items-center bg-gray-800/50 justify-center">
-      <div className="flex justify-between w-1/2 h-10 items-center p-4">
+    <div className="flex w-full items-center bg-gray-800/50 justify-center">
+      <div className="flex justify-between w-1/2 h-16 items-center p-4">
         {links.map((link, i) => (
           <Link
             key={i}
             href={link.href}
-            className={`link ${activeLink === i ? "active" : ""}`}
-            onClick={() => handleLinkClick(i)}
+            className={page === link.name ? "link active" : "link"}
           >
             {link.name}
           </Link>
