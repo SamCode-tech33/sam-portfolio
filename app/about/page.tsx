@@ -29,6 +29,33 @@ const About = () => {
                     <Skillcard tech="Linux" percentage="98%" image="/linux.png" description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, delectus!" />
                 </div>
             </div>
+            <div className="timeline">
+                <h1 className="heading">education and experience</h1>
+                <div className="card">
+                    <div className="card-body">
+                        <h1 className="card-title">2025-Present</h1>
+                        <p className="card-detail">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto sequi recusandae laborum ipsam dignissimos nostrum vitae provident officia, consectetur ab accusantium corrupti exercitationem temporibus repellat non magni cupiditate ea reprehenderit.</p>
+                    </div>
+                </div>
+                <div className="card">
+                    <div className="card-body">
+                        <h1 className="card-title">2024-2025</h1>
+                        <p className="card-detail">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto sequi recusandae laborum ipsam dignissimos nostrum vitae provident officia, consectetur ab accusantium corrupti exercitationem temporibus repellat non magni cupiditate ea reprehenderit.</p>
+                    </div>
+                </div>
+                <div className="card">
+                    <div className="card-body">
+                        <h1 className="card-title">2019-2024</h1>
+                        <p className="card-detail">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto sequi recusandae laborum ipsam dignissimos nostrum vitae provident officia, consectetur ab accusantium corrupti exercitationem temporibus repellat non magni cupiditate ea reprehenderit.</p>
+                    </div>
+                </div>
+                <div className="card">
+                    <div className="card-body">
+                        <h1 className="card-title">2014-2019</h1>
+                        <p className="card-detail">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto sequi recusandae laborum ipsam dignissimos nostrum vitae provident officia, consectetur ab accusantium corrupti exercitationem temporibus repellat non magni cupiditate ea reprehenderit.</p>
+                    </div>
+                </div>
+            </div>
         </section>
     )
 }
