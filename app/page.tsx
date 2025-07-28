@@ -15,8 +15,8 @@ export default function Home() {
 
   return (
     <section className={page === "home" ? "home-section active" : "home-section"}>
-      <h1 className="hero-heading">hello, i am <br /> samuel</h1>
-      <img src="/home.png" className="home-img" alt="image missing" />
+      <h1 className={page === "home" ? "hero-heading active" : "hero-heading"}>hello, i am <br /> samuel</h1>
+      <img src="/home.png" className={page === "home" ? "home-img active" : "home-img"} alt="image missing" />
     </section>
   );
 }
