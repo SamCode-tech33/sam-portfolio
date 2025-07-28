@@ -306,10 +306,24 @@ a.active {
   line-height: 30px;
 }
 
-.skill-level {
+.skill-wheel {
   position: absolute;
-  top: 80px;
-  right: 0;
+  top: 100px;
+  right: 32px;
+  width: 150px;
+  height: 150px;
+}
+
+.skill-level {
+  fill: none;
+  stroke-width: 10;
+  transition: stroke-dashoffset 0.5s ease;
+}
+
+.skill-level-container {
+  position: absolute;
+  top: 100px;
+  right: 32px;
   width: 150px;
   height: 150px;
   display: flex;
@@ -320,82 +334,83 @@ a.active {
   border: 10px solid;
 }
 
-.skill-card:nth-child(1) .skill-level {
-  background: #ff4f4f28;
-  border-color: #ff4f4f;
-  color: #ff4f4f;
+
+.skill-card:nth-child(1) .skill-level-container {
+  background: rgba(255, 79, 79, 0.16);
+  border-color: rgba(161, 51, 51, 0.16);
+  color: rgb(255, 79, 79);
 }
 
-.skill-card:nth-child(2) .skill-level {
-  background: #4fa0ff28;
-  border-color: #4fa0ff;
-  color: #4fa0ff;
+.skill-card:nth-child(2) .skill-level-container {
+  background: rgba(79, 160, 255, 0.16);
+  border-color: rgba(0, 81, 173, 0.16);
+  color: rgb(79, 160, 255);
 }
 
-.skill-card:nth-child(3) .skill-level {
-  background: #ffed4f28;
-  border-color: #ffed4f;
-  color: #ffed4f;
+.skill-card:nth-child(3) .skill-level-container {
+  background: rgba(255, 237, 79, 0.16);
+  border-color: rgba(158, 147, 46, 0.16);
+  color: rgb(255, 237, 79);
 }
 
-.skill-card:nth-child(4) .skill-level {
-  background: #52ff4f28;
-  border-color: #52ff4f;
-  color: #52ff4f;
+.skill-card:nth-child(4) .skill-level-container {
+  background: rgba(82, 255, 79, 0.16);
+  border-color: rgba(82, 255, 79, 0.16);
+  color: rgb(82, 255, 79);
 }
 
-.skill-card:nth-child(5) .skill-level {
-  background: #4fdfff28;
-  border-color: #4fdfff;
-  color: #4fdfff;
+.skill-card:nth-child(5) .skill-level-container {
+  background: rgba(79, 223, 255, 0.16);
+  border-color: rgba(79, 223, 255, 0.16);
+  color: rgb(79, 223, 255);
 }
 
-.skill-card:nth-child(6) .skill-level {
-  background: #4fa0ff28;
-  border-color: #4fa0ff;
-  color: #4fa0ff;
+.skill-card:nth-child(6) .skill-level-container {
+  background: rgba(79, 160, 255, 0.16);
+  border-color: rgba(0, 81, 173, 0.16);
+  color: rgb(79, 160, 255);
 }
 
-.skill-card:nth-child(7) .skill-level {
-  background: #4fdfff28;
-  border-color: #4fdfff;
-  color: #4fdfff;
+.skill-card:nth-child(7) .skill-level-container {
+  background: rgba(79, 223, 255, 0.16);
+  border-color: rgba(79, 223, 255, 0.16);
+  color: rgb(79, 223, 255);
 }
 
-.skill-card:nth-child(8) .skill-level {
-  background: #4fa0ff28;
-  border-color: #4fa0ff;
-  color: #4fa0ff;
+.skill-card:nth-child(8) .skill-level-container {
+  background: rgba(79, 160, 255, 0.16);
+  border-color: rgba(0, 81, 173, 0.16);
+  color: rgb(79, 160, 255);
 }
 
-.skill-card:nth-child(9) .skill-level {
+.skill-card:nth-child(9) .skill-level-container {
   background: rgba(236, 240, 241, 0.16);
-  border-color: #ECF0F1;
-  color: #ECF0F1;
+  border-color: rgba(236, 240, 241, 0.16);
+  color: rgb(236, 240, 241);
 }
 
-.skill-card:nth-child(10) .skill-level {
-  background: #4fa0ff28;
-  border-color: #4fa0ff;
-  color: #4fa0ff;
+.skill-card:nth-child(10) .skill-level-container {
+  background: rgba(79, 160, 255, 0.16);
+  border-color: rgba(79, 160, 255, 0.16);
+  color: rgb(79, 160, 255);
 }
 
-.skill-card:nth-child(11) .skill-level {
-  background: rgba(69, 69, 69, 0.16);
-  border-color: #454545;
-  color: #454545;
+.skill-card:nth-child(11) .skill-level-container {
+  background: rgba(69, 69, 69, 0.3);
+  border-color: rgb(102, 102, 102, 0.16);
+  color: rgb(126, 125, 125);
 }
 
-.skill-card:nth-child(12) .skill-level {
+.skill-card:nth-child(12) .skill-level-container {
   background: rgba(69, 25, 118, 0.16);
-  border-color: #451976;
-  color: #451976;
+  border-color: rgb(69, 29, 134, 0.16);
+  color: rgb(108, 62, 161);
 }
 
-.skill-card:nth-child(13) .skill-level {
+.skill-card:nth-child(13) .skill-level-container {
   background: rgba(236, 240, 241, 0.16);
-  border-color: #ECF0F1;
-  color: #ECF0F1;
+  border-color: rgb(236, 240, 241, 0.16);
+  color: rgb(236, 240, 241);
 }
 
 .timeline {
