@@ -28,7 +28,7 @@
 }
 
 body {
-  background: #191919;
+  background: #2C2C40;
   color: white;
   font-family: sans-serif;
 }
@@ -50,34 +50,43 @@ a.active {
   opacity: 1;
 }
 
+.nav {
+  background: #293245;
+}
+
 .home-section {
   width: 100%;
   height: 95vh;
   padding: 0 150px;
   top: 0;
   opacity: 0;
-  transition: 1s;
+  transition: 2s;
 }
 
 .hero-heading {
-  color: #fff;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 2px white;
   font-size: 150px;
   text-transform: capitalize;
   font-weight: 300;
   position: absolute;
   top: 22%;
-  left: 17%;
+  left: 15%;
+  transition: 2s;
 }
 
 .home-img {
   position: absolute;
   top: 0;
-  right: 0;
+  right: -100px;
   height: 100vh;
   width: 50%;
   object-fit: cover;
-  opacity: 0.2;
+  opacity: 0.3;
   border-radius: 4px;
+  transition: 2s;
 }
 
 .home-section.active,
@@ -89,28 +98,35 @@ a.active {
   z-index: 8;
 }
 
+.home-img.active {
+  transform: translateX(-100px);
+}
+
+.hero-heading.active {
+  transform: translateX(100px);
+}
+
 /* project-section */
 
 .project-section {
   width: 100%;
   min-height: 100vh;
-  padding: 150px 100px 100px;
+  padding: 50px 100px 100px;
   position: fixed;
   top: 0;
-  transition: 1s;
+  transition: 2s;
   opacity: 0;
 }
 
 .project-heading {
   font-size: 100px;
-  background: #252525;
   text-transform: capitalize;
   text-align: center;
   margin-bottom: 50px;
-  color: #1a1a1a;
+  color: #2C2C40;
   background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-stroke: 8px transparent;
+  -webkit-text-stroke: 2px white;
 }
 
 .project-container {
@@ -122,6 +138,8 @@ a.active {
 .project-card {
   height: 400px;
   position: relative;
+  border: solid #BCF7FF 2px;
+  border-radius: 16px;
 }
 
 .project-img {
@@ -132,6 +150,7 @@ a.active {
   left: 0;
   object-fit: cover;
   transition: .5s;
+  border-radius: 16px;
 }
 
 .project-content {
@@ -188,11 +207,11 @@ a.active {
 .about-section {
   width: 100%;
   min-height: 100vh;
-  padding: 150px 100px 0;
+  padding: 75px 100px 0;
   position: fixed;
   top: 0;
   opacity: 0;
-  transition: 1s;
+  transition: 2s;
 }
 
 .about {
@@ -498,7 +517,7 @@ a.active {
   position: absolute;
   top: 0;
   opacity: 0;
-  transition: 1s;
+  transition: 2s;
   padding: 64px 108px 156px;
   height: 100vh;
   display: grid;
