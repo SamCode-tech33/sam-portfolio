@@ -1,7 +1,6 @@
 @import "tailwindcss";
 @tailwind utilities;
 
-
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -28,7 +27,7 @@
 }
 
 body {
-  background: #2C2C40;
+  background: #2c2c40;
   color: white;
   font-family: sans-serif;
 }
@@ -41,7 +40,7 @@ a {
   padding: 10px 30px;
   margin: 0 20px;
   line-height: 80px;
-  transition: .5s;
+  transition: 0.5s;
   font-size: 20px;
 }
 
@@ -123,23 +122,35 @@ a.active {
   text-transform: capitalize;
   text-align: center;
   margin-bottom: 50px;
-  color: #2C2C40;
+  color: #2c2c40;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-stroke: 2px white;
 }
 
 .project-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 100px;
+  display: flex;
+  margin: 0 48px;
+  width: 100%;
+  justify-content: center;
 }
 
 .project-card {
   height: 400px;
   position: relative;
-  border: solid #BCF7FF 2px;
+  border: solid #bcf7ff 2px;
   border-radius: 16px;
+  width: 75px;
+}
+
+.project-card-active {
+  height: 400px;
+  position: relative;
+  border: solid #bcf7ff 2px;
+  border-radius: 16px;
+  width: 750px;
+  margin: 0 24px;
+  transition: 2s;
 }
 
 .project-img {
@@ -149,7 +160,7 @@ a.active {
   top: 0;
   left: 0;
   object-fit: cover;
-  transition: .5s;
+  transition: 0.5s;
   border-radius: 16px;
 }
 
@@ -157,7 +168,7 @@ a.active {
   position: relative;
   padding: 40px;
   color: #fff;
-  transition: .5s;
+  transition: 0.5s;
   opacity: 0;
 }
 
@@ -196,11 +207,11 @@ a.active {
   border: 2px solid #fff;
 }
 
-.project-card:hover .project-img {
+.project-card-active:hover .project-img {
   filter: blur(20px);
 }
 
-.project-card:hover .project-content {
+.project-card-active:hover .project-content {
   opacity: 1;
 }
 
@@ -212,6 +223,7 @@ a.active {
   top: 0;
   opacity: 0;
   transition: 2s;
+  margin: 0 48px;
 }
 
 .about {
@@ -250,7 +262,7 @@ a.active {
   font-size: 16px;
   text-transform: capitalize;
   cursor: pointer;
-  transition: .5s;
+  transition: 0.5s;
   background: rgba(0, 0, 0, 0.5);
 }
 
@@ -274,7 +286,6 @@ a.active {
 
 .skills-container {
   width: 95%;
-  margin: auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 100px;
@@ -283,6 +294,7 @@ a.active {
 
 .skill-card {
   position: relative;
+  border: 2px solid black;
 }
 
 .skill-img {
@@ -333,7 +345,6 @@ a.active {
   border-radius: 50%;
   border: 10px solid;
 }
-
 
 .skill-card:nth-child(1) .skill-level-container {
   background: rgba(255, 79, 79, 0.16);
@@ -439,7 +450,7 @@ a.active {
 }
 
 .card:nth-child(even):before {
-  content: '';
+  content: "";
   position: absolute;
   left: -15%;
   top: 50%;
@@ -451,7 +462,7 @@ a.active {
 }
 
 .card:nth-child(even):after {
-  content: '';
+  content: "";
   position: absolute;
   left: -8.5%;
   top: 50%;
@@ -463,7 +474,7 @@ a.active {
 }
 
 .card:nth-child(odd):before {
-  content: '';
+  content: "";
   position: absolute;
   right: -13%;
   top: 50%;
@@ -475,7 +486,7 @@ a.active {
 }
 
 .card:nth-child(odd):after {
-  content: '';
+  content: "";
   position: absolute;
   right: -8.5%;
   top: 50%;
@@ -512,7 +523,7 @@ a.active {
 }
 
 .card:nth-child(even) .card-body:before {
-  content: '';
+  content: "";
   position: absolute;
   left: -12%;
   top: 0;
@@ -573,7 +584,6 @@ a.active {
   border: none;
   border-radius: 10px;
   cursor: pointer;
-
 }
 
 .map {
