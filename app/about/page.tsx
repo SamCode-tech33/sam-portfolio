@@ -29,7 +29,7 @@ const About = () => {
         span.style.animationDelay = `${i * 0.005}s`;
         textEl.appendChild(span);
       });
-      console.log(textEl.textContent)
+      console.log(textEl.textContent);
     }
   }, []);
 
@@ -39,23 +39,32 @@ const About = () => {
     >
       <div className="about">
         <div className="about-img-container">
-          <button className="download-cv-btn">downlaod cv</button>
+          <a href="/_Samuel-Haraway-CV-2025.pdf" download className="download-cv-btn">
+            <button>Download CV</button>
+          </a>
           <img src="/about.png" className="about-img" alt="" />
         </div>
         <p ref={textRef} className="about-info">
-          At vero eos et accusamus et iusto odio dignissimos ducimus qui
-          blanditiis praesentium voluptatum deleniti atque corrupti quos dolores
-          et quas molestias excepturi sint occaecati cupiditate non provident,
-          similique sunt in culpa qui officia deserunt mollitia animi, id est
-          laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita
-          distinctio. Nam libero tempore, cum soluta nobis est eligendi optio
-          cumque nihil impedit quo minus id quod maxime placeat facere possimus,
-          omnis voluptas assumenda est, omnis dolor repellendus. Temporibus
-          autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe
-          eveniet ut et voluptates repudiandae sint et molestiae non recusandae.
-          Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis
-          voluptatibus maiores alias consequatur aut perferendis doloribus
-          asperiores repellat.
+          I'm a bilingual full stack developer with hands-on experience building
+          scalable, user-focused web applications using technologies like React,
+          Next.js, TypeScript, Node.js, PostgreSQL, and Docker. My work has
+          ranged from designing and deploying RESTful APIs to building
+          responsive interfaces, implementing advanced UI features like
+          drag-and-drop layouts, and collaborating with UX designers to deliver
+          intuitive user experiences. I'm comfortable working across the full
+          development lifecycle—from planning and prototyping to deployment and
+          maintenance—and I care deeply about writing clean, maintainable code
+          that performs well in real-world environments. Before transitioning
+          into software development, I worked in executive recruitment within
+          the pharmaceutical industry. That experience sharpened my
+          communication and product-sense skills, especially when working with
+          commercial teams and understanding the business impact of technology
+          decisions. I bring a practical, team-oriented approach to engineering
+          and enjoy collaborating closely with designers, product managers, and
+          end users to build things that actually solve problems. I hold a B.A.
+          in Japanese Language and Literature from the University of Kansas,
+          studied abroad in Japan, and hold JLPT N2 certification. I'm a native
+          English speaker and speak business-level Japanese.
         </p>
       </div>
       <div className="skill-section">
@@ -65,91 +74,91 @@ const About = () => {
             tech="HTML"
             percentage={98}
             image="/html.png"
-            description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, delectus!"
+            description="Highly proficient in semantic HTML, accessibility, and performance-oriented markup, capable of building clean, maintainable, SEO-optimized structures for complex layouts."
             stroke="rgb(161, 51, 51)"
           />
           <Skillcard
             tech="CSS"
             percentage={98}
             image="/css.png"
-            description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, delectus!"
+            description="Expert in responsive design, Flexbox, Grid, animations, and modern styling techniques, creating visually appealing and adaptive UIs across all screen sizes."
             stroke="rgb(79, 160, 255)"
           />
           <Skillcard
             tech="JS"
             percentage={92}
             image="/js.png"
-            description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, delectus!"
+            description="Strong command of core JavaScript concepts, ES6+, and DOM manipulation, enabling dynamic, interactive web experiences and robust frontend logic."
             stroke="rgb(158, 147, 46)"
           />
           <Skillcard
             tech="Express/Node"
             percentage={80}
             image="/nodejs-express.png"
-            description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, delectus!"
+            description="Competent in building RESTful APIs and server-side logic using Express, handling routing, middleware, and basic authentication in full-stack projects."
             stroke="rgb(82, 255, 79)"
           />
           <Skillcard
             tech="React.js"
             percentage={92}
             image="/react.png"
-            description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, delectus!"
+            description="Advanced understanding of React components, hooks, and state management, enabling scalable and performant SPA development with clean architecture and reusable logic."
             stroke="rgb(79, 223, 255)"
           />
           <Skillcard
             tech="TS"
             percentage={92}
             image="/ts.png"
-            description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, delectus!"
+            description="Skilled in applying TypeScript to React and Node projects, ensuring type safety, better tooling, and reducing runtime errors in production codebases."
             stroke="rgb(0, 81, 173)"
           />
           <Skillcard
             tech="Tailwind"
             percentage={98}
             image="/tailwind.png"
-            description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, delectus!"
+            description="Highly efficient using utility-first Tailwind framework to rapidly build responsive, consistent UI designs with minimal custom CSS overhead."
             stroke="rgb(79, 223, 255)"
           />
           <Skillcard
             tech="PostgreSQL"
             percentage={75}
             image="/postgres.png"
-            description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, delectus!"
+            description="Solid understanding of relational database design, writing performant SQL queries, and managing structured data for web apps with logical data relationships."
             stroke="rgb(0, 81, 173)"
           />
           <Skillcard
             tech="RESTful APIs"
             percentage={90}
             image="/restfulapi.png"
-            description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, delectus!"
+            description="Experienced in consuming and designing RESTful APIs with clear separation of concerns, following best practices for HTTP verbs and status codes."
             stroke="rgb(236, 240, 241)"
           />
           <Skillcard
             tech="Docker"
             percentage={70}
             image="/docker.png"
-            description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, delectus!"
+            description="Proficient in containerizing full-stack applications, writing Dockerfiles, and managing development environments with Docker Compose for smoother deployment workflows."
             stroke="rgb(79, 160, 255)"
           />
           <Skillcard
             tech="Next.js"
             percentage={88}
             image="/next.png"
-            description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, delectus!"
+            description="Capable of building performant SSR and SSG applications with Next.js, using API routes, dynamic routing, and advanced optimization features effectively."
             stroke="rgb(102, 102, 102)"
           />
           <Skillcard
             tech="Git"
             percentage={95}
             image="/git.png"
-            description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, delectus!"
+            description="Very comfortable with Git version control, including branching strategies, rebasing, resolving conflicts, and collaborating efficiently using GitHub workflows."
             stroke="rgb(69, 29, 134)"
           />
           <Skillcard
             tech="Linux"
             percentage={97}
             image="/linux.png"
-            description="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, delectus!"
+            description="Strong command-line skills and server management in Linux environments, essential for deploying, debugging, and maintaining scalable web infrastructure securely."
             stroke="rgb(236, 240, 241)"
           />
         </div>
@@ -160,11 +169,10 @@ const About = () => {
           <div className="card-body">
             <h1 className="card-title">2025-Present</h1>
             <p className="card-detail">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Architecto sequi recusandae laborum ipsam dignissimos nostrum
-              vitae provident officia, consectetur ab accusantium corrupti
-              exercitationem temporibus repellat non magni cupiditate ea
-              reprehenderit.
+              Squared - Full Stack Developer
+              <br /> <br />
+              Internship program at a start-up building a B2B efficiency
+              enhancement product, based on scrum principals.
             </p>
           </div>
         </div>
@@ -172,11 +180,26 @@ const About = () => {
           <div className="card-body">
             <h1 className="card-title">2024-2025</h1>
             <p className="card-detail">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Architecto sequi recusandae laborum ipsam dignissimos nostrum
-              vitae provident officia, consectetur ab accusantium corrupti
-              exercitationem temporibus repellat non magni cupiditate ea
-              reprehenderit.
+              Angolon - Junior Software Engineer
+              <br /> <br />
+              One year contract, working as a junior fullstack developer,
+              frontend focused (80/20)
+            </p>
+          </div>
+        </div>
+        <div className="card">
+          <div className="card-body">
+            <h1 className="card-title">2021-2024</h1>
+            <p className="card-detail">
+              Self-Teaching + Mentor Phase
+              <br /> <br />
+              In this period I was teaching myself web development, starting
+              with gaining a strong foundation in vanilla JS. I used Harvard's
+              free online CS courses, including CS50/Intro, CS50/WebDev, and
+              CS50/Databases/SQL. I also hired a mentor who was a previous
+              senior developer at Novartis for one on one coaching as well as a
+              guide of what projects to create to enhance and speed along my
+              learning.
             </p>
           </div>
         </div>
@@ -184,11 +207,14 @@ const About = () => {
           <div className="card-body">
             <h1 className="card-title">2019-2024</h1>
             <p className="card-detail">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Architecto sequi recusandae laborum ipsam dignissimos nostrum
-              vitae provident officia, consectetur ab accusantium corrupti
-              exercitationem temporibus repellat non magni cupiditate ea
-              reprehenderit.
+              Executive Recruitment Consultant - Pharmaceutical Industry Tokyo
+              <br /> <br />I worked for two different companies during this time
+              period and billed an average of 250K USD a year in placement
+              sales. Essentially, we recruited talented Japanese Doctors,
+              Pharmacists, and Clinicians for western or global pharmaceutical
+              companies. This position gave me a full understanding of most
+              business structures, product management knowledge, and strong
+              sales skills.
             </p>
           </div>
         </div>
@@ -196,11 +222,11 @@ const About = () => {
           <div className="card-body">
             <h1 className="card-title">2014-2019</h1>
             <p className="card-detail">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Architecto sequi recusandae laborum ipsam dignissimos nostrum
-              vitae provident officia, consectetur ab accusantium corrupti
-              exercitationem temporibus repellat non magni cupiditate ea
-              reprehenderit.
+              University of Kansas + Kanagawa University (Hiratsuka)
+              <br /> <br />
+              Obtained a degree in Japanese Language and International Business.
+              Also participated in the Kansas University track team as a
+              pole-vaulter.
             </p>
           </div>
         </div>
