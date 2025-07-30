@@ -1,12 +1,13 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import { useAppContext } from "../context";
 import React from "react";
 import Skillcard from "../components/skillcards";
 
 const About = () => {
   const { page, setPage } = useAppContext();
+  const textRef = useRef<HTMLParagraphElement>(null);
 
   useEffect(() => {
     setPage("about");
@@ -14,6 +15,23 @@ const About = () => {
       setPage("default");
     };
   }, [setPage]);
+
+  useEffect(() => {
+    const textEl = textRef.current;
+
+    if (textEl) {
+      const characters = textEl.textContent?.split("") ?? [];
+      textEl.textContent = "";
+      characters.forEach((char, i) => {
+        const span = document.createElement("span");
+        span.textContent = char;
+        span.style.animation = `fadeIn 0.005s forwards`;
+        span.style.animationDelay = `${i * 0.005}s`;
+        textEl.appendChild(span);
+      });
+      console.log(textEl.textContent)
+    }
+  }, []);
 
   return (
     <section
@@ -24,7 +42,21 @@ const About = () => {
           <button className="download-cv-btn">downlaod cv</button>
           <img src="/about.png" className="about-img" alt="" />
         </div>
-        <p className="about-info">Lorem ipsum.....</p>
+        <p ref={textRef} className="about-info">
+          At vero eos et accusamus et iusto odio dignissimos ducimus qui
+          blanditiis praesentium voluptatum deleniti atque corrupti quos dolores
+          et quas molestias excepturi sint occaecati cupiditate non provident,
+          similique sunt in culpa qui officia deserunt mollitia animi, id est
+          laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita
+          distinctio. Nam libero tempore, cum soluta nobis est eligendi optio
+          cumque nihil impedit quo minus id quod maxime placeat facere possimus,
+          omnis voluptas assumenda est, omnis dolor repellendus. Temporibus
+          autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe
+          eveniet ut et voluptates repudiandae sint et molestiae non recusandae.
+          Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis
+          voluptatibus maiores alias consequatur aut perferendis doloribus
+          asperiores repellat.
+        </p>
       </div>
       <div className="skill-section">
         <h1 className="heading">skills</h1>
