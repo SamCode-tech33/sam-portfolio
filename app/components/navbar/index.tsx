@@ -14,8 +14,8 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="nav flex w-full items-center justify-center">
-      <div className="flex justify-between w-1/2 h-16 items-center p-4">
+    <div className="nav flex items-center justify-center">
+      <div className="nav-links flex justify-between h-16 items-center">
         {links.map((link, i) => (
           <Link
             key={i}

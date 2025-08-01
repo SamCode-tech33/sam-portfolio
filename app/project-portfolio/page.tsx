@@ -28,7 +28,7 @@ const Projects = () => {
         >
           <img src="crypto-app.png" className="project-img rounded-lg" alt="" />
           <div className="project-content">
-            <h1 className="project-title">ZenCoin - Cryptocurrency Platform</h1>
+            <h1 className="project-title">ZenCoin - Crypto Platform</h1>
             <p className="project-info">
               ZenCoin's functionality and aesthetic is at the same level as most
               major crypto-currency platforms. (user database in progress)

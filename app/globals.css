@@ -37,9 +37,7 @@ a {
   opacity: 0.5;
   text-decoration: none;
   text-transform: capitalize;
-  padding: 10px 30px;
-  margin: 0 20px;
-  line-height: 80px;
+  line-height: 64px;
   transition: 0.5s;
   font-size: 20px;
 }
@@ -53,9 +51,13 @@ a.active {
   background: #293245;
 }
 
+.nav-links {
+  width: 50vw;
+}
+
 .home-section {
   width: 100%;
-  height: 95vh;
+  height: 92.9vh;
   padding: 0 150px;
   top: 0;
   opacity: 0;
@@ -76,11 +78,83 @@ a.active {
   transition: 2s;
 }
 
+@media (max-width: 1600px) {
+  .hero-heading {
+    font-size: 120px;
+    left: 13%;
+    top: 26%;
+  }
+}
+
+@media (max-width: 1350px) {
+  .hero-heading {
+    font-size: 100px;
+    left: 10%;
+    top: 29%;
+  }
+}
+
+@media (max-width: 1080px) {
+  .hero-heading {
+    font-size: 80px;
+    left: 8%;
+    top: 33%;
+  }
+}
+
+@media (max-width: 890px) {
+  .hero-heading {
+    font-size: 72px;
+    left: 0%;
+    top: 34.5%;
+  }
+  .nav-links {
+    width: 65vw;
+  }
+}
+
+@media (max-width: 760px) {
+  .hero-heading {
+    -webkit-text-stroke: 1px white;
+    font-size: 64px;
+    left: -4%;
+    top: 36%;
+  }
+  .nav-links {
+    width: 75vw;
+  }
+}
+
+@media (max-width: 620px) {
+  .hero-heading {
+    font-size: 56px;
+    left: -8%;
+    top: 39%;
+  }
+}
+
+@media (max-width: 540px) {
+  .hero-heading {
+    font-size: 48px;
+    left: -12%;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-heading {
+    font-size: 40px;
+    left: -16%;
+  }
+  .nav-links {
+    width: 90vw;
+  }
+}
+
 .home-img {
   position: absolute;
   top: 0;
   right: -100px;
-  height: 100vh;
+  height: 100%;
   width: 50%;
   object-fit: cover;
   opacity: 0.3;
@@ -110,7 +184,7 @@ a.active {
 .project-section {
   width: 100%;
   min-height: 100vh;
-  padding: 50px 100px 100px;
+  padding: 48px 100px 48px;
   position: fixed;
   top: 0;
   transition: 2s;
@@ -128,11 +202,58 @@ a.active {
   -webkit-text-stroke: 2px white;
 }
 
+@media (max-width: 1200px) {
+  .project-heading {
+    font-size: 72px;
+  }
+}
+
+@media (max-width: 900px) {
+  .project-heading {
+    font-size: 64px;
+  }
+}
+
+@media (max-width: 900px) {
+  .project-heading {
+    font-size: 56px;
+    -webkit-text-stroke: 1px white;
+  }
+}
+
+@media (max-width: 750px) {
+  .project-heading {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .project-heading {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-heading {
+    font-size: 24px;
+    -webkit-text-stroke: 0px white;
+    color: white;
+  }
+}
+
 .project-container {
   display: flex;
-  margin: 0 48px;
   width: 100%;
   justify-content: center;
+}
+
+@media (max-width: 1410px) {
+  .project-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .project-card {
@@ -148,9 +269,17 @@ a.active {
   position: relative;
   border: solid #bcf7ff 2px;
   border-radius: 16px;
-  width: 750px;
+  width: 40vw;
   margin: 0 24px;
   transition: 2s;
+}
+
+@media (max-width: 1410px) {
+  .project-card-active {
+    width: 80vw;
+    margin-bottom: 32px;
+    transition: 1s;
+  }
 }
 
 .project-img {
@@ -159,7 +288,6 @@ a.active {
   position: absolute;
   top: 0;
   left: 0;
-  object-fit: cover;
   transition: 0.5s;
   border-radius: 16px;
 }
@@ -173,10 +301,43 @@ a.active {
 }
 
 .project-title {
-  font-size: 50px;
+  font-size: 48px;
   text-transform: capitalize;
   text-align: center;
   font-weight: 300;
+}
+
+@media (max-width: 1600px) {
+  .project-title {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 1410px) {
+  .project-title {
+    font-size: 32px;
+  }
+  .project-info {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 580px) {
+  .project-title {
+    font-size: 24px;
+  }
+  .project-info {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-title {
+    font-size: 24px;
+  }
+  .project-info {
+    font-size: 8px;
+  }
 }
 
 .project-info {
@@ -276,10 +437,10 @@ a.active {
 
 .download-cv-btn {
   position: absolute;
-  top: 40px;
-  left: 47%;
+  top: 48px;
+  left: 50%;
   transform: translateX(-50%);
-  padding: 0 20px;
+  padding: 0 16px;
   border-radius: 16px;
   color: #fff;
   border: none;
