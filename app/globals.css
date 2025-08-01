@@ -261,9 +261,7 @@ a.active {
   position: relative;
   border: solid #bcf7ff 2px;
   border-radius: 16px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 72px;
 }
 
 .project-card-active {
@@ -274,7 +272,7 @@ a.active {
   width: 40vw;
   margin: 0 24px;
   transition: 2s;
-    display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
