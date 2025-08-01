@@ -199,7 +199,7 @@ const About = () => {
               Squared - Full Stack Developer
               <br /> <br />
               Internship program at a start-up building a B2B efficiency
-              enhancement product, based on scrum principals.
+              enhancement product, based on scrum principles.
             </p>
           </div>
         </div>
