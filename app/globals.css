@@ -261,7 +261,8 @@ a.active {
   position: relative;
   border: solid #bcf7ff 2px;
   border-radius: 16px;
-  width: 72px;
+  width: 5vw;
+  display: block;
 }
 
 .project-card-active {
