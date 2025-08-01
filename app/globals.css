@@ -1115,7 +1115,15 @@ a.active {
   .contact-section {
     flex-direction: column;
     padding: 48px 0;
-    height: 154vh
+    height: 164vh
+  }
+}
+
+@media (max-width: 420px) {
+  .contact-section {
+    flex-direction: column;
+    padding: 48px 0;
+    height: 172vh
   }
 }
 
