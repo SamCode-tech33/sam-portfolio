@@ -39,10 +39,14 @@ const About = () => {
     >
       <div className="about">
         <div className="about-img-container">
-          <a href="/_Samuel-Haraway-CV-2025.pdf" download className="download-cv-btn">
+          <a
+            href="/_Samuel-Haraway-CV-2025.pdf"
+            download
+            className="download-cv-btn"
+          >
             <button>Download CV</button>
           </a>
-          <img src="/about.png" className="about-img" alt="" />
+          <img src="/home.png" className="about-img" alt="" />
         </div>
         <p ref={textRef} className="about-info">
           I'm a bilingual full stack developer with hands-on experience building
@@ -154,13 +158,36 @@ const About = () => {
             description="Very comfortable with Git version control, including branching strategies, rebasing, resolving conflicts, and collaborating efficiently using GitHub workflows."
             stroke="rgb(69, 29, 134)"
           />
-          <Skillcard
-            tech="Linux"
-            percentage={97}
-            image="/linux.png"
-            description="Strong command-line skills and server management in Linux environments, essential for deploying, debugging, and maintaining scalable web infrastructure securely."
-            stroke="rgb(236, 240, 241)"
-          />
+        </div>
+        <div className="skill-last">
+          <div className="skill-level-container">{97}%</div>
+          <svg width="100" height="100" className="skill-wheel">
+            <circle
+              cx="80"
+              cy="80"
+              r={70}
+              stroke="rgb(236, 240, 241)"
+              strokeWidth="10"
+              fill="none"
+              strokeDasharray={2 * Math.PI * 70}
+              strokeDashoffset={
+                2 * Math.PI * 70 - (97 / 100) * (2 * Math.PI * 70)
+              }
+              className="skill-wheel"
+              style={{
+                transform: "rotate(-90deg)",
+                transformOrigin: "50% 53%",
+                transition: "stroke-dashoffset 0.5s ease",
+              }}
+            />
+          </svg>
+          <img src="linux.png" className="skill-img" alt="Linux" />
+          <h1 className="skill-name">Linux</h1>
+          <p className="skill-info">
+            Strong command-line skills and server management in Linux
+            environments, essential for deploying, debugging, and maintaining
+            scalable web infrastructure securely.
+          </p>
         </div>
       </div>
       <div className="timeline">
