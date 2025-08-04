@@ -30,14 +30,16 @@ const Projects = () => {
           <div className="project-content">
             <h1 className="project-title">ZenCoin - Crypto Platform</h1>
             <p className="project-info">
-              ZenCoin's functionality and aesthetic is at the same level as most
-              major crypto-currency platforms. (user database in progress)
+              A full-featured Cryptocurrency platform, with access to over 5,000
+              coins, coin conversion tools, a portfolio mechanism, real time
+              price updates, and graphical representations. (User data-base in
+              progress)
             </p>
             <div className="project-btn-grp">
               <a
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://github.com/sam-tech-33/CryptoApp"
+                href="https://github.com/SamCode-tech33/CryptoApp"
                 className="project-btn github"
               >
                 github repo
@@ -58,16 +60,24 @@ const Projects = () => {
             page === "projects" ? "project-card-active" : "project-card"
           }
         >
-          <img src="tech.jpg" className="project-img rounded-lg" alt="" />
+          <img src="demon-scape.png" className="project-img rounded-lg" alt="" />
           <div className="project-content">
-            <h1 className="project-title">To be Added</h1>
+            <h1 className="project-title">Demon Scape - 2D Top-Down Game</h1>
             <p className="project-info">
-              Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
-              consectetur, adipisci velit.
+              You wake up in the middle of a horrid demonic ceremony and realize
+              the entire human race has been possessed. Blend in with the demons
+              around you and find a way to save the world! (A work in the early stages)
             </p>
             <div className="project-btn-grp">
-              <button className="project-btn github">github repo</button>
-              <button className="project-btn live">see live</button>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://github.com/SamCode-tech33/demon-scape"
+                  className="project-btn github"
+                >
+                  github repo
+                </a>
+              <button className="project-btn live line-through">see live</button>
             </div>
           </div>
         </div>
