@@ -60,24 +60,33 @@ const Projects = () => {
             page === "projects" ? "project-card-active" : "project-card"
           }
         >
-          <img src="demon-scape.png" className="project-img rounded-lg" alt="" />
+          <img
+            src="demon-scape.png"
+            className="project-img rounded-lg"
+            alt=""
+          />
           <div className="project-content">
-            <h1 className="project-title">Demon Scape - 2D Top-Down Game</h1>
+            <h1 className="project-title">Demon Scape - 2D Game</h1>
             <p className="project-info">
-              You wake up in the middle of a horrid demonic ceremony and realize
-              the entire human race has been possessed. Blend in with the demons
-              around you and find a way to save the world! (A work in the early stages)
+              Top-down adventure game using phaser.js & next.js . (A work in the early stages)
             </p>
             <div className="project-btn-grp">
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://github.com/SamCode-tech33/demon-scape"
-                  className="project-btn github"
-                >
-                  github repo
-                </a>
-              <button className="project-btn live line-through">see live</button>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://github.com/SamCode-tech33/DemonScape"
+                className="project-btn github"
+              >
+                github repo
+              </a>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://demon-scape.vercel.app/"
+                className="project-btn live"
+              >
+                see live
+              </a>
             </div>
           </div>
         </div>
