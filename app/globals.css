@@ -311,6 +311,13 @@ a.active {
   font-weight: 300;
 }
 
+.project-info {
+  margin: 20px;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+}
+
 @media (max-width: 1600px) {
   .project-title {
     font-size: 40px;
@@ -320,9 +327,6 @@ a.active {
 @media (max-width: 1410px) {
   .project-title {
     font-size: 32px;
-  }
-  .project-info {
-    font-size: 16px;
   }
 }
 
@@ -340,15 +344,8 @@ a.active {
     font-size: 24px;
   }
   .project-info {
-    font-size: 6px;
+    font-size: 8px;
   }
-}
-
-.project-info {
-  margin: 40px;
-  font-size: 16px;
-  line-height: 30px;
-  text-align: center;
 }
 
 .project-btn-grp {
