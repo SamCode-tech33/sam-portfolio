@@ -8,6 +8,7 @@ import Skillcard from "../components/skillcards";
 const About = () => {
   const { page, setPage } = useAppContext();
   const textRef = useRef<HTMLParagraphElement>(null);
+  const originalHTMLRef = useRef<string>("");
 
   useEffect(() => {
     setPage("about");
@@ -17,20 +18,41 @@ const About = () => {
   }, [setPage]);
 
   useEffect(() => {
-    const textEl = textRef.current;
-
-    if (textEl) {
-      const characters = textEl.textContent?.split("") ?? [];
-      textEl.textContent = "";
-      characters.forEach((char, i) => {
-        const span = document.createElement("span");
-        span.textContent = char;
-        span.style.animation = `fadeIn 0.005s forwards`;
-        span.style.animationDelay = `${i * 0.005}s`;
-        textEl.appendChild(span);
-      });
-      console.log(textEl.textContent);
+    if (!textRef.current) return;
+    const originalHTML = textRef.current.innerHTML;
+    if (!originalHTMLRef.current) {
+      originalHTMLRef.current = textRef.current.innerHTML.replace(
+        /<!--.*?-->/g,
+        ""
+      );
     }
+    textRef.current.innerHTML = originalHTMLRef.current;
+    const cleanHTML = originalHTMLRef.current;
+    textRef.current.innerHTML = "";
+    let delay = 0;
+    cleanHTML.split(/(<strong>.*?<\/strong>)/g).forEach((chunk) => {
+      if (chunk.startsWith("<strong>")) {
+        const boldText = chunk.replace(/<\/?strong>/g, "");
+        boldText.split("").forEach((char) => {
+          const span = document.createElement("span");
+          span.textContent = char;
+          span.classList.add("highlight");
+          span.style.animation = `fadeIn 0.005s forwards`;
+          span.style.animationDelay = `${delay * 0.005}s`;
+          delay++;
+          textRef.current?.appendChild(span);
+        });
+      } else {
+        chunk.split("").forEach((char) => {
+          const span = document.createElement("span");
+          span.textContent = char;
+          span.style.animation = `fadeIn 0.005s forwards`;
+          span.style.animationDelay = `${delay * 0.005}s`;
+          delay++;
+          textRef.current?.appendChild(span);
+        });
+      }
+    });
   }, []);
 
   return (
@@ -46,29 +68,21 @@ const About = () => {
           >
             <button>Download CV</button>
           </a>
-          <img src="/home.png" className="about-img" alt="" />
+          <img src="/about.png" className="about-img" alt="" />
         </div>
         <p ref={textRef} className="about-info">
-          I'm a bilingual full stack developer with hands-on experience building
-          scalable, user-focused web applications using technologies like React,
-          Next.js, TypeScript, Node.js, PostgreSQL, and Docker. My work has
-          ranged from designing and deploying RESTful APIs to building
-          responsive interfaces, implementing advanced UI features like
-          drag-and-drop layouts, and collaborating with UX designers to deliver
-          intuitive user experiences. I'm comfortable working across the full
-          development lifecycle—from planning and prototyping to deployment and
-          maintenance—and I care deeply about writing clean, maintainable code
-          that performs well in real-world environments. Before transitioning
-          into software development, I worked in executive recruitment within
-          the pharmaceutical industry. That experience sharpened my
-          communication and product-sense skills, especially when working with
-          commercial teams and understanding the business impact of technology
-          decisions. I bring a practical, team-oriented approach to engineering
-          and enjoy collaborating closely with designers, product managers, and
-          end users to build things that actually solve problems. I hold a B.A.
-          in Japanese Language and Literature from the University of Kansas,
-          studied abroad in Japan, and hold JLPT N2 certification. I'm a native
-          English speaker and speak business-level Japanese.
+          Full Stack Web Developer with 1.5 years building production-ready
+          applications in{" "}
+          <strong>React, Next.js, PostgreSQL (Docker), and MongoDB, </strong>
+          including a full <strong>cryptocurrency platform</strong> and an{" "}
+          <strong>RPG adventure game</strong> with save functionality, using{" "}
+          <strong>Phaser.js with Next.js and MongoDB.</strong>
+          Former executive recruiter with 5 years of experience sourcing and
+          evaluating top talent for global companies — bringing sharp
+          communication skills, business insight, and the ability to deliver
+          technical solutions that align with client needs.{" "}
+          <strong>Bilingual English/Japanese</strong> and experienced in both US
+          and Japan business environments.
         </p>
       </div>
       <div className="skill-section">
