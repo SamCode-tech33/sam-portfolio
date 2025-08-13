@@ -32,8 +32,10 @@ const Projects = () => {
             <p className="project-info">
               A full-featured Cryptocurrency platform, with access to over 5,000
               coins, coin conversion tools, a portfolio mechanism, real time
-              price updates, and graphical representations. (User data-base in
-              progress)
+              price updates, and graphical representations. Made with{" "}
+              <strong>Next.js</strong>, <strong>React</strong>,{" "}
+              <strong>Redux</strong>, <strong>TypeScript</strong>, and{" "}
+              <strong>Tailwind / CSS.</strong>
             </p>
             <div className="project-btn-grp">
               <a
@@ -68,9 +70,10 @@ const Projects = () => {
           <div className="project-content">
             <h1 className="project-title">Demon Scape - 2D Game</h1>
             <p className="project-info">
-              Top-down adventure game using Phaser.js with Next.js (typescript)
-              and MongoDB. Fight scenes to be made in 3D using Three.js (A work
-              in the early stages).
+              Top-down adventure game using <strong>Phaser.js</strong> with{" "}
+              <strong>Next.js (TypeScript / React) </strong>
+              and <strong>MongoDB</strong>. Fight scenes to be made in 3D using{" "}
+              <strong>Three.js</strong> (A work in the early stages).
             </p>
             <div className="project-btn-grp">
               <a
