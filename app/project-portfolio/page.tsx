@@ -68,7 +68,9 @@ const Projects = () => {
           <div className="project-content">
             <h1 className="project-title">Demon Scape - 2D Game</h1>
             <p className="project-info">
-              Top-down adventure game using phaser.js & next.js . (A work in the early stages)
+              Top-down adventure game using Phaser.js with Next.js (typescript)
+              and MongoDB. Fight scenes to be made in 3D using Three.js (A work
+              in the early stages).
             </p>
             <div className="project-btn-grp">
               <a
