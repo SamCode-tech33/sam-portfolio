@@ -76,7 +76,8 @@ const About = () => {
           <strong>React, Next.js, PostgreSQL (Docker), and MongoDB, </strong>
           including a full <strong>cryptocurrency platform</strong> and an{" "}
           <strong>RPG adventure game</strong> with save functionality, using{" "}
-          <strong>Phaser.js with Next.js and MongoDB.</strong>
+          <strong>Phaser.js </strong>with <strong>Next.js </strong> and{" "}
+          <strong>MongoDB. </strong>
           Former executive recruiter with 5 years of experience sourcing and
           evaluating top talent for global companies — bringing sharp
           communication skills, business insight, and the ability to deliver
