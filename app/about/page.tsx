@@ -211,10 +211,24 @@ const About = () => {
           <div className="card-body">
             <h1 className="card-title">2025-Present</h1>
             <p className="card-detail">
-              Squared - Full Stack Developer
+              Aviarax (Previously Squared) - Full Stack Developer
               <br /> <br />
-              Internship program at a start-up building a B2B efficiency
-              enhancement product, based on scrum principles.
+              Part-time contributor at Aviarax's start up environment.
+              <br /> <br />
+              TypeScript/React frontend with GO/express.js backend and
+              postgreSQL DB
+              <br />
+              contribution to agentic AI service
+              <br />
+              RPC services with gRPC and protobuf
+              <br />
+              Database and Query optimization
+              <br />
+              Product and client research with customers
+              <br />
+              Working with live deployments
+              <br />
+              enterprise-grade monorepo
             </p>
           </div>
         </div>
@@ -224,8 +238,8 @@ const About = () => {
             <p className="card-detail">
               Angolon - Junior Software Engineer
               <br /> <br />
-              One year contract, working as a junior fullstack developer,
-              frontend focused (80/20)
+              Contract based work with a timeline of 3 months renewed 5 times -
+              working as a junior fullstack developer, frontend focused (80/20)
             </p>
           </div>
         </div>

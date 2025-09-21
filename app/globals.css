@@ -182,9 +182,7 @@ a.active {
 
 .project-section {
   width: 100%;
-  min-height: 100vh;
-  padding: 48px 100px 48px;
-  position: fixed;
+  padding: 48px 48px;
   top: 0;
   transition: 2s;
   opacity: 0;
@@ -199,6 +197,37 @@ a.active {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-stroke: 2px white;
+}
+
+.note {
+  margin: 0 144px;
+  padding: 0 48px 56px;
+}
+
+@media (max-width: 1100px) {
+  .note {
+    margin: 0 88px;
+  }
+}
+
+@media (max-width: 900px) {
+  .note {
+    margin: 0 32px;
+  }
+}
+
+@media (max-width: 700px) {
+  .note {
+    margin: 0 16px;
+    padding: 0 24px 56px;
+  }
+}
+
+@media (max-width: 600px) {
+  .note {
+    margin: 0;
+    padding: 0 8px 56px;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -369,6 +398,7 @@ a.active {
 .project-btn.live {
   background: none;
   border: 2px solid #fff;
+  margin: 12px;
 }
 
 .project-card-active:hover .project-img {
