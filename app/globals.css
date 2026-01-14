@@ -202,6 +202,7 @@ a.active {
 .note {
   margin: 0 144px;
   padding: 0 48px 56px;
+  font-size: 12px;
 }
 
 @media (max-width: 1100px) {
@@ -385,7 +386,7 @@ a.active {
 .project-btn {
   height: 40px;
   text-transform: capitalize;
-  font-size: 18px;
+  font-size: 16px;
   border: none;
   background: #000;
   color: #fff;
@@ -393,6 +394,12 @@ a.active {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media (max-width: 600px) {
+  .project-btn {
+    font-size: 10px;
+  }
 }
 
 .project-btn.live {
@@ -442,18 +449,33 @@ a.active {
   font-weight: bold;
   opacity: 1;
   color: white;
-  font-size: 25px;
+  font-size: 24px;
 }
 
 @media (max-width: 1380px) {
   .about-info {
     font-size: 18px;
   }
+  .highlight {
+    font-size: 19px;
+  }
 }
 
 @media (max-width: 1155px) {
   .about-info {
     font-size: 16px;
+  }
+  .highlight {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 700px) {
+  .about-info {
+    font-size: 12px;
+  }
+  .highlight {
+    font-size: 13px;
   }
 }
 

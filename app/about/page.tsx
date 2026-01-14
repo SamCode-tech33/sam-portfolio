@@ -62,7 +62,7 @@ const About = () => {
       <div className="about">
         <div className="about-img-container">
           <a
-            href="/_Samuel-Haraway-CV-2025.pdf"
+            href="/_Samuel-Haraway-CV-English-2025.pdf"
             download
             className="download-cv-btn"
           >

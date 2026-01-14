@@ -71,7 +71,7 @@ const Projects = () => {
                     href="https://zen-coin-crypto-app.vercel.app"
                     className="project-btn live"
                   >
-                    See Live - Vercel
+                    Live - Vercel
                   </a>
                   <a
                     target="_blank"
@@ -79,7 +79,7 @@ const Projects = () => {
                     href="https://zencoin.zencode33.dev"
                     className="project-btn live"
                   >
-                    See Live - Self-Hosted
+                    Live - Self-Hosted
                   </a>
                 </div>
               </div>
@@ -121,7 +121,7 @@ const Projects = () => {
                     href="https://demon-scape.vercel.app/"
                     className="project-btn live"
                   >
-                    See Live - Vercel
+                    Live - Vercel
                   </a>
                   <a
                     target="_blank"
@@ -129,7 +129,7 @@ const Projects = () => {
                     href="https://demonscape.zencode33.dev"
                     className="project-btn live"
                   >
-                    See Live - Self-Hosted
+                    Live - Self-Hosted
                   </a>
                 </div>
               </div>
