@@ -71,7 +71,7 @@ const About = () => {
           <img src="/about.png" className="about-img" alt="" />
         </div>
         <p ref={textRef} className="about-info">
-          Full Stack Web Developer with 1.5 years building production-ready
+          Full Stack Web Developer about 2 years building production-ready
           applications in{" "}
           <strong>React, Next.js, PostgreSQL (Docker), and MongoDB, </strong>
           including a full <strong>cryptocurrency platform</strong> and an{" "}
