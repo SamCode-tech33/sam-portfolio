@@ -23,7 +23,7 @@ const About = () => {
     if (!originalHTMLRef.current) {
       originalHTMLRef.current = textRef.current.innerHTML.replace(
         /<!--.*?-->/g,
-        ""
+        "",
       );
     }
     textRef.current.innerHTML = originalHTMLRef.current;
@@ -211,9 +211,10 @@ const About = () => {
           <div className="card-body">
             <h1 className="card-title">2025-Present</h1>
             <p className="card-detail">
-              Aviarax (Previously Squared) - Full Stack Developer
+              Angolon - Full Stack Developer
               <br /> <br />
-              Part-time contributor at Aviarax's start up environment.
+              A continuation of my contract and contributor our new client's
+              start up environment.
               <br /> <br />
               TypeScript/React frontend with GO/express.js backend and
               postgreSQL DB
@@ -236,7 +237,7 @@ const About = () => {
           <div className="card-body">
             <h1 className="card-title">2024-2025</h1>
             <p className="card-detail">
-              Angolon - Junior Software Engineer
+              Angolon - Junior Developer
               <br /> <br />
               Contract based work with a timeline of 3 months renewed 5 times -
               working as a junior fullstack developer, frontend focused (80/20)
