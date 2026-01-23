@@ -23,15 +23,10 @@ const Projects = () => {
         <h1 className="project-heading">some of my projects</h1>
         <div className="note">
           <em>
-            Please note that I have listed both the vercel and self-hosted
-            versions of my projects. The self-hosted versions are more optimized
-            for speed and have better caching. They are running off of my intel
-            NUC on ubuntu server LTS. I recommend accessing the self-hosted
-            version especially for Demon Scape as it is more asset heavy.
-            ZenCoin gets negligible benefits. Also please note that, while rare,
-            if my internet goes down or I happen to be working on the server,
-            the self-hosted sites may be down. The vercel versions will always
-            be accessible.
+            Please note that I am self-hosting my projects with Ubuntu 20.04
+            LTS. In the case that my internet is down, you can access the vercel
+            builds through the github link. I am serving my DB locally so please
+            understand that the vercel versions will be primarily front-end.
           </em>
         </div>
         <div className="project-container">
@@ -65,14 +60,6 @@ const Projects = () => {
                   github repo
                 </a>
                 <div>
-                  <a
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href="https://zen-coin-crypto-app.vercel.app"
-                    className="project-btn live"
-                  >
-                    Live - Vercel
-                  </a>
                   <a
                     target="_blank"
                     rel="noopener noreferrer"
@@ -115,14 +102,6 @@ const Projects = () => {
                   github repo
                 </a>
                 <div>
-                  <a
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href="https://demon-scape.vercel.app/"
-                    className="project-btn live"
-                  >
-                    Live - Vercel
-                  </a>
                   <a
                     target="_blank"
                     rel="noopener noreferrer"
