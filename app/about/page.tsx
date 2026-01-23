@@ -64,9 +64,16 @@ const About = () => {
           <a
             href="/_Samuel-Haraway-CV-English-2025.pdf"
             download
-            className="download-cv-btn"
+            className="download-cv-btn-en"
           >
-            <button>Download CV</button>
+            <button>Download CV (ENG)</button>
+          </a>
+          <a
+            href="/_Samuel-Haraway-CV-Japanese-2025.pdf"
+            download
+            className="download-cv-btn-jp"
+          >
+            <button>Download CV (JPN)</button>
           </a>
           <img src="/about.png" className="about-img" alt="" />
         </div>
