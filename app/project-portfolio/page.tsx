@@ -87,10 +87,9 @@ const Projects = () => {
               <p className="project-info">
                 Top-down adventure game using <strong>Phaser.js</strong> with{" "}
                 <strong>Next.js (TypeScript / React) </strong>
-                and save capabilities to be soon implemented using{" "}
-                <strong>MongoDB</strong>. Fight scenes to be remade in 3D soon,
-                using <strong>Three.js</strong> (A work in the early stages - PC
-                ONLY).
+                and save capabilities using <strong>MongoDB</strong>. Fight
+                scenes to be remade in 3D soon, using <strong>Three.js</strong>{" "}
+                (A work in the early stages - PC ONLY).
               </p>
               <div className="project-btn-grp items-center">
                 <a
