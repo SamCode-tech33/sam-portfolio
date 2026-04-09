@@ -272,6 +272,8 @@ a.active {
 
 .project-container {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
   justify-content: center;
 }
@@ -292,6 +294,7 @@ a.active {
   border-radius: 16px;
   width: 5vw;
   display: block;
+  margin-bottom: 24px;
 }
 
 .project-card-active {
@@ -300,7 +303,7 @@ a.active {
   border: solid #bcf7ff 2px;
   border-radius: 16px;
   width: 40vw;
-  margin: 0 24px;
+  margin-bottom: 24px;
   transition: 2s;
   display: flex;
   justify-content: center;

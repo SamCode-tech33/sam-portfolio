@@ -63,7 +63,7 @@ const Projects = () => {
                   <a
                     target="_blank"
                     rel="noopener noreferrer"
-                    href="https://zencoin.zencode33.dev"
+                    href="https://crypto.zencode33.dev"
                     className="project-btn live"
                   >
                     Live - Self-Hosted
