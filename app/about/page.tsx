@@ -4,6 +4,7 @@ import { useEffect, useRef } from "react";
 import { useAppContext } from "../context";
 import React from "react";
 import Skillcard from "../components/skillcards";
+import Image from "next/image";
 
 const About = () => {
   const { page, setPage } = useAppContext();
@@ -62,20 +63,93 @@ const About = () => {
       <div className="about">
         <div className="about-img-container">
           <a
-            href="/_Samuel-Haraway-CV-English-2025.pdf"
+            href="/_Samuel-Haraway-CV-English-2026.pdf"
             download
             className="download-cv-btn-en"
           >
-            <button>Download CV (ENG)</button>
+            <button
+              type="button"
+              className="flex items-center justify-around w-24"
+            >
+              <span>English CV</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="size-4"
+              >
+                <title>Download Icon</title>
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3"
+                />
+              </svg>
+            </button>
           </a>
           <a
-            href="/_Samuel-Haraway-CV-Japanese-2025.pdf"
+            href="/履歴書ハラウェイ・サミュエル.pdf"
+            download
+            className="download-cv-btn-jp-ri"
+          >
+            <button
+              type="button"
+              className="flex items-center justify-around w-24"
+            >
+              <span>履歴書</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="size-4"
+              >
+                <title>Download Icon</title>
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3"
+                />
+              </svg>
+            </button>
+          </a>
+          <a
+            href="/_Samuel-Haraway-CV-Japanese-2026.pdf"
             download
             className="download-cv-btn-jp"
           >
-            <button>Download CV (JPN)</button>
+            <button
+              type="button"
+              className="flex items-center justify-around w-24"
+            >
+              <span>Japanese CV</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="size-4"
+              >
+                <title>Download Icon</title>
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3"
+                />
+              </svg>
+            </button>
           </a>
-          <img src="/about.png" className="about-img" alt="" />
+          <Image
+            src="/about.png"
+            className="about-img"
+            alt="missing"
+            width={400}
+            height={1200}
+          />
         </div>
         <p ref={textRef} className="about-info">
           Full Stack Web Developer about 2 years building production-ready
@@ -98,112 +172,85 @@ const About = () => {
         <div className="skills-container">
           <Skillcard
             tech="HTML"
-            percentage={98}
             image="/html.png"
             description="Highly proficient in semantic HTML, accessibility, and performance-oriented markup, capable of building clean, maintainable, SEO-optimized structures for complex layouts."
             stroke="rgb(161, 51, 51)"
           />
           <Skillcard
             tech="CSS"
-            percentage={98}
             image="/css.png"
             description="Expert in responsive design, Flexbox, Grid, animations, and modern styling techniques, creating visually appealing and adaptive UIs across all screen sizes."
             stroke="rgb(79, 160, 255)"
           />
           <Skillcard
             tech="JS"
-            percentage={92}
             image="/js.png"
             description="Strong command of core JavaScript concepts, ES6+, and DOM manipulation, enabling dynamic, interactive web experiences and robust frontend logic."
             stroke="rgb(158, 147, 46)"
           />
           <Skillcard
             tech="Express/Node"
-            percentage={80}
             image="/nodejs-express.png"
             description="Competent in building RESTful APIs and server-side logic using Express, handling routing, middleware, and basic authentication in full-stack projects."
             stroke="rgb(82, 255, 79)"
           />
           <Skillcard
             tech="React.js"
-            percentage={92}
             image="/react.png"
             description="Advanced understanding of React components, hooks, and state management, enabling scalable and performant SPA development with clean architecture and reusable logic."
             stroke="rgb(79, 223, 255)"
           />
           <Skillcard
             tech="TS"
-            percentage={92}
             image="/ts.png"
             description="Skilled in applying TypeScript to React and Node projects, ensuring type safety, better tooling, and reducing runtime errors in production codebases."
             stroke="rgb(0, 81, 173)"
           />
           <Skillcard
             tech="Tailwind"
-            percentage={98}
             image="/tailwind.png"
             description="Highly efficient using utility-first Tailwind framework to rapidly build responsive, consistent UI designs with minimal custom CSS overhead."
             stroke="rgb(79, 223, 255)"
           />
           <Skillcard
             tech="PostgreSQL"
-            percentage={75}
             image="/postgres.png"
             description="Solid understanding of relational database design, writing performant SQL queries, and managing structured data for web apps with logical data relationships."
             stroke="rgb(0, 81, 173)"
           />
           <Skillcard
             tech="RESTful APIs"
-            percentage={90}
             image="/restfulapi.png"
             description="Experienced in consuming and designing RESTful APIs with clear separation of concerns, following best practices for HTTP verbs and status codes."
             stroke="rgb(236, 240, 241)"
           />
           <Skillcard
             tech="Docker"
-            percentage={70}
             image="/docker.png"
             description="Proficient in containerizing full-stack applications, writing Dockerfiles, and managing development environments with Docker Compose for smoother deployment workflows."
             stroke="rgb(79, 160, 255)"
           />
           <Skillcard
             tech="Next.js"
-            percentage={88}
             image="/next.png"
             description="Capable of building performant SSR and SSG applications with Next.js, using API routes, dynamic routing, and advanced optimization features effectively."
             stroke="rgb(102, 102, 102)"
           />
           <Skillcard
             tech="Git"
-            percentage={95}
             image="/git.png"
             description="Very comfortable with Git version control, including branching strategies, rebasing, resolving conflicts, and collaborating efficiently using GitHub workflows."
             stroke="rgb(69, 29, 134)"
           />
         </div>
         <div className="skill-last">
-          <div className="skill-level-container">{97}%</div>
-          <svg width="100" height="100" className="skill-wheel">
-            <circle
-              cx="80"
-              cy="80"
-              r={70}
-              stroke="rgb(236, 240, 241)"
-              strokeWidth="10"
-              fill="none"
-              strokeDasharray={2 * Math.PI * 70}
-              strokeDashoffset={
-                2 * Math.PI * 70 - (97 / 100) * (2 * Math.PI * 70)
-              }
-              className="skill-wheel"
-              style={{
-                transform: "rotate(-90deg)",
-                transformOrigin: "50% 53%",
-                transition: "stroke-dashoffset 0.5s ease",
-              }}
-            />
-          </svg>
-          <img src="linux.png" className="skill-img" alt="Linux" />
+          <Image
+            src="/linux.png"
+            className="skill-img"
+            alt="Linux"
+            width={200}
+            height={100}
+          />
           <h1 className="skill-name">Linux</h1>
           <p className="skill-info">
             Strong command-line skills and server management in Linux
