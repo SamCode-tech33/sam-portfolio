@@ -30,7 +30,7 @@ const Projects = () => {
           </em>
         </div>
         <div className="project-container">
-          <div className="flex w-full justify-around">
+          <div className="flex flex-col w-full justify-around items-center xl:flex-row">
             <div
               className={
                 page === "projects" ? "project-card-active" : "project-card"
